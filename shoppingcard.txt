@@ -1,0 +1,32 @@
+A shopping cart checkout feature that allows a user to check out as a guest (without an account), or as a logged-in user. They should be allowed to do either, but should be asked if they want to create an account or log in if they check out as a guest.
+
+    Think about the following; you may need to make assumptions or decisions about the prompt and how the feature should behave:
+        What should happen if the cart is empty?
+        What needs to be shown to the user at each step of check out?
+        What behaviors of this feature does the prompt miss or gloss over?
+    Hint: Observe the shopping cart and checkout features of some popular websites to get some ideas!
+
+Cart Is Empty:
+If the user tries to initiate the checkout process with an empty cart, they should be informed that their cart is empty.
+Suggest options to continue shopping or return to the homepage.
+
+User Account Status:
+When the user begins the checkout process, they should have the option to check out as a guest or log in.
+If they choose to log in, they should be prompted to enter their login credentials (username/email and password).
+If they opt to check out as a guest, they should be asked if they want to create an account later (with benefits highlighted) or proceed without an account.
+
+Steps of Checkout:
+Checkout typically consists of several steps:
+a. Cart Review: Display the items in the cart, quantities, prices, and a subtotal. Allow users to make changes (e.g., update quantities or remove items) at this stage.
+b. Shipping Information: Collect shipping details, such as address and preferred shipping method.
+c. Billing Information: Gather payment details (credit card, PayPal, etc.), billing address, and offer any promo code or discount fields.
+d. Order Review: Provide a summary of the order, including products, shipping and billing details, and the total cost.
+e. Confirmation: Display an order confirmation with a unique order ID and an estimated delivery date.
+
+Missing or Glossed-Over Behaviors:
+Guest Account Conversion: If a user checks out as a guest and decides to create an account later, offer a simple registration form that captures necessary information. Provide a clear option to set a password.
+Error Handling: Implement user-friendly error handling, especially during the submission of payment information. Give clear feedback on what went wrong and how to rectify it.
+Guest Checkout Benefits: If the user checks out as a guest, briefly mention the benefits of creating an account (e.g., order history, easy returns, loyalty points) to encourage account creation.
+Privacy and Security: Assure users that their data is secure and explain your privacy policy.
+Progress Bar: Include a progress bar to show users which step of the checkout process they're in.
+Shipping Costs and Times: Display shipping options, costs, and estimated delivery times for each choice.
